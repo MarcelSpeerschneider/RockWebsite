@@ -1,0 +1,368 @@
+body {
+
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.aot {
+
+    background-image: url('./img/header.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+header {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 35px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header img {
+
+    width: 100px;
+    height: auto;
+}
+
+.social-icons {
+
+    display: flex;
+}
+
+.social-icon {
+
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.social-icon:hover {
+
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 8px #af8548)
+}
+
+nav {
+
+    display: flex;
+}
+
+nav a {
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 30px;
+}
+
+nav a:hover {
+
+    color: #af8548;
+}
+
+.start-page {
+
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+
+    font-family: 'Viga', sans-serif;
+    font-size: 84px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-top: 100px;
+    margin-block-end: 0;
+    margin-block-start: 0;
+
+}
+
+.headline-text-under {
+
+    font-size: 25px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.btn {
+
+    background-color: #af8548;
+    padding: 8px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    width: 160px;
+    border: 0;
+    cursor: pointer;
+}
+
+.btn-margin {
+
+    margin: 30px;
+}
+
+.btn:hover {
+
+    background-color: #c79755;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.category {
+
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 80px;
+    gap: 16px;
+}
+
+.category img {
+
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+.category a {
+
+    font-size: 20px;
+    font-weight: 700;
+    color: #af8548;
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    flex: 1;
+}
+
+.category a:hover {
+
+    color: #c79755;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.festival {
+
+    background-color: #272727;
+    color: white;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    flex: 1;
+}
+
+.festival-img {
+
+    height: 300px;
+}
+
+.festival-middle-container {
+
+    flex: 1;
+    padding: 40px 40px;
+    height: 200px;
+
+}
+
+.festival-middle-container p {
+
+    font-size: 16px;
+    font-weight: 400;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+h4 {
+
+    margin-block-start: 0;
+    margin-block-end: 0.2em;
+    font-weight: 400;
+}
+
+h3 {
+
+    margin-block-start: 0;
+    margin-block-end: 0.5em;
+}
+
+.buy-ticket-container {
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: #c79755 solid 1px;
+    width: 300px;
+}
+
+.buy-ticket:hover {
+
+    background-color: #c79755;
+    color: #fff;
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+.slogan {
+
+    color: #c79755;
+    background-color: white;
+    padding: 80px 80px;
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.video-section {
+
+    background-image: url('./img/bottom.png');
+    height: 600px;
+    background-position: center;
+    background-size: cover;
+}
+
+footer {
+
+    padding: 80px 80px;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.half-width {
+
+    width: 50%;
+}
+
+.subscribe {
+
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons-footer {
+
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+input {
+
+    height: 43px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    flex: 1;
+    max-width: 300px;
+    font-size: large;
+
+}
+
+.text-center {
+
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+}
+
+input::placeholder {
+
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@media(max-width: 800px) {
+    .hide-mobile {
+        display: none;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+}
+
+@media(max-width: 600px) {
+    .category {
+        flex-direction: column;
+        gap: 100px;
+    }
+
+}
+
+@media(max-width: 950px) {
+
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav {
+        padding: 20px;
+    }
+
+
+    .festival {
+        flex-direction: column;
+    }
+
+    .festival-img {
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .buy-ticket-container {
+        border-left: none;
+        width: 300px;
+        height: 42px;
+        padding-bottom: 40px;
+    }
+
+    .buy-ticket-container .btn {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    h2 {
+        font-size: 24px;
+        flex: 1;
+    }
+
+    .festival-middle-container {
+        text-align: center;
+    }
+
+    .full-width-mobile {
+        width: 100%;
+    }
+}
